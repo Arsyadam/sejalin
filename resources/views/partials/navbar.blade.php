@@ -12,19 +12,20 @@
                     <a class="nav-link {{ ($active === "home") ? 'active ' : '' }}" href="/">Beranda</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ ($active === "about") ? 'active ' : '' }}" href="#">Tentang Kami</a>
+                    <a class="nav-link {{ ($active === "tentang-kami") ? 'active ' : '' }}" href="/tentang-kami">Tentang Kami</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ ($active === "product") ? 'active ' : '' }}" href="#">Produk</a>
+                    <a class="nav-link {{ ($active === "produk") ? 'active ' : '' }}" href="/#produk-home">Produk</a>
                 </li>
+               
                 <li class="nav-item">
-                    <a class="nav-link {{ ($active === "product") ? 'active ' : '' }}" href="#">reseller</a>
+                    <a class="nav-link {{ ($active === "Team") ? 'active ' : '' }}" href="/order">Pemesanan</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link {{ ($active === "Team") ? 'active ' : '' }}" href="#">Pemesanan</a>
-                </li>
-                <li class="nav-item border border-danger border-3 rounded-3">
-                    <a class="nav-link " href="#">My account</a>
+                <li class="nav-item pt-2">
+                    <a href="https://www.instagram.com/sejalincreative/" class=" px-2 text-dark"><i class="fab fa-instagram"></i></a>
+                    <a href="https://facebook.com" class=" text-dark px-2"><i class="fab fa-facebook"></i></a>
+                    <a href="https://tiktok.com" class=" text-dark px-2"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://api.whatsapp.com/send/?phone=6285234114332&text&app_absent=0" class=" px-2 text-dark"><i class="fab fa-whatsapp"></i></a>
                 </li>
             </ul>
             

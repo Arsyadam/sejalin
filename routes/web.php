@@ -20,3 +20,21 @@ Route::get('/', function () {
         'active' => "home",
     ]);
 });
+Route::get('/tentang-kami', function () {
+    return view('about',[
+        "title" => "Tentang Kami",
+        'active' => "tentang-kami",
+    ]);
+});
+Route::get('/semua-produk', function () {
+    return view('AllProduct',[
+        "title" => "produk",
+        'active' => "produk",
+    ]);
+});
+Route::get('/produk', function () {
+    return view('product',[
+        "title" => "produk",
+        'active' => "produk",
+    ]);
+});
