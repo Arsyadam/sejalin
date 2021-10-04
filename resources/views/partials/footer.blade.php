@@ -1,4 +1,4 @@
-<footer class="footer mt-auto py-3 " style="background-color:#FF0000;">
+<footer class="footer  py-3 " style="background-color:#FF0000;">
     <div class="container">
         <footer class="mt-auto footer d-flex flex-wrap justify-content-between align-items-center  py-3 my-4 ">
           <p class="col-md-4 mb-0 text-light">&copy; @php echo date("Y"); @endphp Sejalin Creative</p>
