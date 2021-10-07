@@ -11,7 +11,7 @@
                         <h1 class="h3 mb-3 fw-normal">Please Register</h1>
                     
                         <div class="form-floating ">
-                            <input type="text" class="form-control rounded-0 rounded-top @error('name') is-invalid @enderror" id="name" name="name" placeholder="your name">
+                            <input type="text" class="form-control rounded-0 rounded-top @error('name') is-invalid @enderror" id="name" name="name" value="{{ old('name') }}" placeholder="your name">
                             @error('name')
                                 <div class="invalid-feedback">
                                     {{ $message }} 
@@ -20,7 +20,7 @@
                             <label for="floatingInput">Nama</label>
                         </div>
                         <div class="form-floating ">
-                            <input type="text" class="form-control rounded-0 @error('username') is-invalid @enderror" id="username" name="username"  placeholder="username">
+                            <input type="text" class="form-control rounded-0 @error('username') is-invalid @enderror" id="username" name="username" value="{{ old('username') }}" placeholder="username">
                             @error('username')
                                 <div class="invalid-feedback">
                                     {{ $message }} 
@@ -29,7 +29,7 @@
                             <label for="username">Username</label>
                         </div>
                         <div class="form-floating ">
-                            <input type="email" class="form-control rounded-0 @error('email') is-invalid @enderror" id="email" name="email" placeholder="name@example.com">
+                            <input type="email" class="form-control rounded-0 @error('email') is-invalid @enderror" id="email" name="email" value="{{ old('email') }}" placeholder="name@example.com">
                             @error('email')
                                 <div class="invalid-feedback">
                                     {{ $message }} 
@@ -47,7 +47,7 @@
                             <label for="password">Kata Sandi</label>
                         </div>
                         <div class="form-check text-start mb-3">
-                            <input class="form-check-input @error('admin') is-invalid @enderror" type="checkbox" value="true" name="admin" id="admin">
+                            <input class="form-check-input @error('admin') is-invalid @enderror" type="checkbox" value="1" name="admin" id="admin">
                             <label class="form-check-label" for="admin">
                                 Is Admin
                             </label>
